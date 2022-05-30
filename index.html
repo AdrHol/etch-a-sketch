@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>prototype</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Etch-a-Sketch !</div>
+        </header>
+        <section>
+        <div class="body-container">
+                <form>
+                    <input class="size_selection" type="radio" name="size" value="100" checked> <label for="size_selection">10x10</label>
+                    <input class="size_selection" type="radio" name="size" value="400"> <label for="size_selection">20x20</label>
+                    <input class="size_selection" type="radio" name="size" value="1600"> <label for="size_selection">40x40</label>
+                    <input class="size_selection" type="radio" name="size" value="4096"> <label for="size_selection">60x60</label>
+                </form>
+            <div class="middle">
+                <div class="customization">
+                        Pick a color:
+                    <input type="color" id="color">        
+                    <button id="rainbow">Rainbow Mode !</button> 
+                    <button id="shadow">Shadow Mode !</button>
+
+                </div>
+                <div class="container">
+                </div>
+            </div>
+             <button id="clear">Clear</button>
+        </div>
+        </section>
+        <footer>Copyright Adrian Holubecki - 2022</footer>
+    </body>
+</html>

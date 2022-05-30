@@ -1,0 +1,95 @@
+
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: bisque;
+    margin: 0;
+}
+header {
+box-sizing: border-box;
+height: 100px;
+background-color: rgb(231, 180, 118);
+border-bottom: 2px solid rgb(161, 123, 72);
+text-align: center;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: white;
+    box-shadow: 5px 5px 3px grey;
+    
+
+}
+
+.pixel {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#colored {
+    background-color: black;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(231, 180, 118);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+margin-top: auto;
+margin-bottom: auto;
+font-size: 30px;
+}
+
+.body-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+}
+
+.rgb {
+width: 150px;
+padding: 0px;
+}
+
+.rgb-list{
+    width: 150px;
+    list-style: none;
+    padding: 0px;
+}
+
+#rainbow, #shadow{
+    display:block;
+    width: 150px;
+    height: 40px;
+}
+
+.customization {
+    width: 160px;
+    margin-top: auto;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+
+#set {
+    margin-bottom: 10px;
+}
+
+#clear {
+margin-top: 5px;
+}
