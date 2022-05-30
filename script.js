@@ -3,6 +3,15 @@ const radioValues = document.querySelectorAll('input[name=size]');
 let pixelSize = initialValue;
 let pixel = document.querySelectorAll('.pixel');
 let color = document.querySelector('#color');
+let mode = 0;
+
+const modeButton = document.querySelectorAll('.mode');
+
+modeButton.forEach(function(button){
+button.addEventListener('click', function(){
+    mode = Number(button.value);
+})
+})
 
 
 // event listener for chosing size value and setting new canvas
@@ -53,7 +62,15 @@ const touchpad = document.querySelector('.container');
 
 function showup(pix){
     if (pix.type == 'mouseout'){
-        pix.target.style.backgroundColor = `${color.value}`;
+
+        if (mode == 2){
+            ;
+        } else if (mode == 1){
+            pix.target.style.backgroundColor = `rgb(${Math.floor(Math.random()*100+150)}, ${Math.floor(Math.random()*100+150)}, ${Math.floor(Math.random()*100+150)})`;
+        } else {
+            pix.target.style.backgroundColor = `${color.value}`;
+        }
+ 
     }
  }
 
@@ -83,3 +100,7 @@ function clearing() {
 
 clear.addEventListener('click', clearing);
 
+
+function rand (){
+    console.log();
+}
