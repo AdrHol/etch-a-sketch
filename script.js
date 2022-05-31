@@ -64,9 +64,10 @@ function showup(pix){
     if (pix.type == 'mouseout'){
 
         if (mode == 2){
-            ;
+
+
         } else if (mode == 1){
-            pix.target.style.backgroundColor = `rgb(${Math.floor(Math.random()*100+150)}, ${Math.floor(Math.random()*100+150)}, ${Math.floor(Math.random()*100+150)})`;
+            pix.target.style.backgroundColor = `rgb(${Math.floor(Math.random()*250)}, ${Math.floor(Math.random()*250)}, ${Math.floor(Math.random()*250)})`;
         } else {
             pix.target.style.backgroundColor = `${color.value}`;
         }
